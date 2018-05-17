@@ -1,0 +1,19 @@
+<body>
+  <div class="container">
+    <header>
+      <h1>Todo List</h1>
+    </header>
+ 
+    <ul>
+      {{#each tasks}}
+        {{> task}}
+      {{/each}}
+    </ul>
+    <div>{{value}}</div>
+    <input input='onInput' type="text" value="{{value}}">
+  </div>
+</body>
+ 
+<template name="task">   
+  <li>{{_id}}</li>
+</template>
